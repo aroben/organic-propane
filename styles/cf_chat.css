@@ -329,7 +329,7 @@ table.chat a.youtube_video:after {
   display: block;
   width: 44px;
   height: 44px;
-  background: transparent url(http://cl.ly/EjE7/play.png) no-repeat 0 0;
+  background: transparent url(https://raw.github.com/jonrohan/organic-propane/master/styles/play.png) no-repeat 0 0;
   position: absolute;
   top: 50%;
   left: 50%;
