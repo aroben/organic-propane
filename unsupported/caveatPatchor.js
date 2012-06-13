@@ -579,7 +579,7 @@ if (true) {
         var body = message.bodyElement()
         var imgs = body.select('a.image[href*="faceup.me"]')
         if (imgs.length) {
-          var src = decodeURIComponent(imgs[0].href.replace(/^.*\?src=/,''))
+          var src = decodeURIComponent(imgs[0].href.replace(/^.*\?overlay=.*&src=/,''))
 
           var msgIndex = this.chat.transcript.messages.indexOf(message);
           if (msgIndex > -1) {
