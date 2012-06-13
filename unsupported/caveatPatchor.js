@@ -577,7 +577,7 @@ if (true) {
     detectStache: function(message) {
       if (!message.pending() && message.kind === 'text') {
         var body = message.bodyElement()
-        var imgs = body.select('a.image[href*="mustachify.me"]')
+        var imgs = body.select('a.image[href*="faceup.me"]')
         if (imgs.length) {
           var src = decodeURIComponent(imgs[0].href.replace(/^.*\?src=/,''))
 
