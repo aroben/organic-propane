@@ -76,7 +76,7 @@ div#corner_logo {
   display:none ! important;
 }
 tr.message {
-  font-size: 13px ! important;
+  font-size: 15px ! important;
 }
 div.Left {
   width: 100% ! important;
@@ -350,3 +350,4 @@ tr.propane_search td { background-color: #ffd8d8 ! important; }
 tr.propane_current_search td { background-color: #ff9090 ! important; }
 
 tr.propane_hidden_enterleave { display: none ! important; }
+div#upload_form, input[type="file"] { display:none ! important; }

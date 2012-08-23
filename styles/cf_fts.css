@@ -22,3 +22,6 @@ div#Container div.Full div.bottom {
   display:none ! important;
 }
 div#open_bar { display: none ! important; }
+
+input#term { border: 1px inset ! important; }
+div#launchbar { display: none ! important; }
