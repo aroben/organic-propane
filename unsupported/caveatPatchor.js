@@ -466,8 +466,7 @@ if (true) {
         }
         else if (body.innerText.match(/^\w+'s deploy of (.*) failed$|^Failed \w+ deploy/)) {
           message.bodyCell.setStyle({
-            color: '#ff0000',
-            fontWeight: 'bold'
+            color: '#d55555'
           })
         }
 
@@ -635,11 +634,10 @@ if (true) {
         if (body.innerText.match(/^Build #(\d+) \([0-9a-zA-Z]+\) of (github-)?([-_0-9a-zA-Z]+)/)) {
           var failed_p = body.innerText.match(/failed/);
           var success_p = body.innerText.match(/success/);
-          var color = failed_p ? '#ff0000' : '#00941f';
+          var color = failed_p ? '#d55555' : '#58C04F';
           if (failed_p || success_p)
             message.bodyCell.setStyle({
-              color: color,
-              fontWeight: 'bold'
+              color: color
             })
 
           var sha = body.innerText.match(/\(([0-9a-z]+)\)/i)[1]
@@ -661,7 +659,7 @@ if (true) {
                 build = build.replace(/<\/a>.*$/, '</a>').replace('Build ','');
                 if (btime) build += "] [" + btime;
                 otherMsg.bodyElement().insert({bottom: " ["+build+"]"})
-                otherMsg.bodyCell.setStyle({color:color,fontWeight:'bold'})
+                otherMsg.bodyCell.setStyle({color:color})
                 message.element.remove()
                 break
               }
