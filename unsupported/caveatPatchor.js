@@ -351,6 +351,15 @@ if (true) {
       for (var i = 0; i < messages.length; i++) {
         this.detectMeatbags(messages[i]);
       }
+      if ((this.chat.windowmanager.getScrollOffset() + this.chat.windowmanager.getWindowHeight()) >=
+          (this.chat.windowmanager.getPageHeight() - 400)) {
+          setTimeout(
+          (function(cfobj) {
+              return function() {
+                  cfobj.chat.windowmanager.scrollToBottom();
+              }
+          })(this), 500);
+      }
       if (scrolledToBottom) {
         this.chat.windowmanager.scrollToBottom();
       }

@@ -292,7 +292,8 @@ tr.timestamp_message td {
   padding-top:8px ! important;
 }
 
-tr.propane_alert_match:not(.propane_search) strong {
+tr.propane_alert_match:not(.propane_search) strong,
+tr.propane_alert_match:not(.propane_search) .body {
 color:#18374c ! important;
 text-shadow: 1px #74acc3 !important;
 }
