@@ -459,12 +459,7 @@ if (true) {
     detectCommit: function(message) {
       if (!message.pending() && message.kind === 'text') {
         var body = message.bodyElement()
-        if (body.innerText.match(/^\[[\w-\.]+(\/|\])/) || body.innerText.match(/(is deploying|deployment of)/) || body.innerText.match(/(accepted|rejected|added|delivered) the (story "|following comment)/)) {
-          message.bodyCell.setStyle({
-            color: '#888888'
-          })
-        }
-        else if (body.innerText.match(/^\w+'s deploy of (.*) failed$|^Failed \w+ deploy/)) {
+        if (body.innerText.match(/^\w+'s deploy of (.*) failed$|^Failed \w+ deploy/)) {
           message.bodyCell.setStyle({
             color: '#d55555'
           })
