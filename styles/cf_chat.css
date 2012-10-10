@@ -46,7 +46,6 @@ div.speak {
   background: none top repeat-x ! important;
 }
 div.Left div.col,
-#chat-wrapper,
 table.chat,
 #last_message,
 tbody#chat {
